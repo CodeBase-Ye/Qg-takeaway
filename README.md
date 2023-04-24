@@ -36,3 +36,5 @@
 ### 下单成功
 
 ![描述](https://github.com/CodeBase-Ye/Text/blob/main/8.png)
+
+指数加权移动平均（Exponential Weighted Moving Average，EWMA）的公式如下： S_t = \begin{cases} Y_1, & t=1 \\ \alpha Y_t + (1-\alpha)S_{t-1}, & t>1 \end{cases} 其中，Y_t 表示第 t 个时刻的观测值，S_t 表示第 t 个时刻的 EWMA 值，\alpha 表示平滑系数，满足 0<\alpha<1。 EWMA 算法的基本思想是对时间序列进行加权平均，最近的观测值权重更大，而过去的观测值权重逐渐衰减。通过调整平滑系数 \alpha 的大小，可以平衡对过去数据的关注程度和对现在数据的关注程度。
